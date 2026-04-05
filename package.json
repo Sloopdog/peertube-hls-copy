@@ -1,0 +1,36 @@
+{
+  "name": "peertube-plugin-copy-hls-url",
+  "version": "0.1.4",
+  "license": "MIT",
+  "description": "Adds an admin-only HLS copy/open control on PeerTube watch pages.",
+  "homepage": "",
+  "author": "peertube-plugin-copy-hls-url contributors",
+  "bugs": "",
+  "keywords": [
+    "peertube",
+    "peertube-plugin",
+    "hls",
+    "streaming",
+    "m3u8"
+  ],
+  "main": "main.js",
+  "library": "./main.js",
+  "engine": {
+    "peertube": ">=7.0.0"
+  },
+  "clientScripts": [
+    {
+      "script": "client/watch-copy-hls.js",
+      "scopes": [
+        "video-watch"
+      ]
+    }
+  ],
+  "css": [
+    "client/watch-copy-hls.css"
+  ],
+  "files": [
+    "main.js",
+    "client"
+  ]
+}
