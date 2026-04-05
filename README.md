@@ -48,13 +48,3 @@ sudo -u peertube -H env NODE_ENV=production NODE_CONFIG_DIR=/var/www/peertube/co
   node dist/scripts/plugin/install.js --plugin-path /absolute/path/to/peertube-plugin-copy-hls-url
 sudo systemctl restart peertube
 ```
-
-## Publishing
-
-Publish the package to npm:
-
-```bash
-npm publish
-```
-
-PeerTube's plugin index should pick up the package automatically after indexing.
